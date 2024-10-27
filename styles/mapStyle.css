@@ -1,0 +1,127 @@
+html, body {
+    height: 150%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #623E29, #D9A671);
+    color: #fff;
+    padding: 0 40px;
+    text-align: center;
+    direction: rtl;
+    min-height: 100vh;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: #ffffff;
+            font-size: 1.5em;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #D9A671;
+            border-radius: 10px;
+        }
+
+            nav ul li a:hover {
+                color: #D9A671;
+            }
+
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+}
+
+    .breadcrumb li {
+        margin-right: 10px;
+    }
+
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #D9A671;
+        }
+
+            .breadcrumb li a:hover {
+                text-decoration: underline;
+            }
+
+        .breadcrumb li:not(:last-child)::after {
+            content: ">";
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+ul.page-list-sitemap li a:hover {
+    color: #D9A671;
+    text-decoration: underline;
+}
+ul.page-list-sitemap {
+    padding: 0;
+    list-style: none;
+    margin: 30px auto;
+}
+
+    ul.page-list-sitemap li {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 15px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: right;
+    }
+
+        ul.page-list-sitemap li a {
+            color: #333333;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}

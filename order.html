@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>עולם הקפה- הזמנת קפה</title>
+    <meta name="description" content="אתר קפה עם מתכונים ומידע על סוגי קפה - הזמנת קפה.">
+    <meta name="keywords" content="קפה, מתכונים, קפה ישראלי, הזמנת קפה">
+    <meta name="author" content="יובל גרוסמן, שני סהר, טבע צורן, גל חברוני, טל יצחקי">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/orderStyle.css">
+</head>
+<body id="order-page">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">דף הבית</a></li>
+            <li><a href="order.html">הזמנת קפה</a></li>
+        </ol>
+    </nav>
+    <h1>טופס הזמנה מהירה - ilovecoffee </h1>
+
+    <form id="orderForm">
+
+        <label for="name">שם המזמין:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+
+        <p>בחר סוג קפה:</p>
+        <input type="radio" id="hot" name="coffeeType" value="hot" onclick="showCoffeeImage('hot')">
+        <label for="hot">קפה חם</label>
+        <input type="radio" id="cold" name="coffeeType" value="cold" onclick="showCoffeeImage('cold')">
+        <label for="cold">קפה קר</label><br><br>
+
+
+
+        <p>בחר תוספות:</p>
+
+        <div class="option">
+            <input type="checkbox" id="strong" name="addons" value="strong" onclick="toggleAddonImage('strongImage')">
+            <label for="strong">חזק</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="notStrong" name="addons" value="notStrong" onclick="toggleAddonImage('notStrongImage')">
+            <label for="notStrong">חלש</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="katzeffet" name="addons" value="katzefet" onclick="toggleAddonImage('katzefetImage')">
+            <label for="katzefet">קצפת</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="sprinkles" name="addons" value="sprinkles" onclick="toggleAddonImage('sprinklesImage')">
+            <label for="sprinkles">סוכריות</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="cookies" name="addons" value="cookies" onclick="toggleAddonImage('cookiesImage')">
+            <label for="cookies">אוריאו</label><br><br>
+        </div>
+
+
+
+        <button type="submit" id="orderButton" disabled>הזמן עכשיו</button>
+    </form>
+
+
+    <div>
+        <img id="hotImage" src="images/hotcoffee.png" class="hidden" alt="תמונה של קפה חם">
+        <img id="coldImage" src="images/coldcoffee.png" class="hidden" alt="תמונה של קפה קר">
+        <img id="strongImage" src="images/strong.png" class="unselected" alt="תמונה של קפה חזק">
+        <img id="notStrongImage" src="images/notStrong.png" class="unselected" alt="תמונה של קפה חלש">
+        <img id="katzefetImage" src="images/katzefet.png" class="unselected" alt="תמונה של קצפת">
+        <img id="sprinklesImage" src="images/sprinkles.jpg" class="unselected" alt="תמונה של סוכריות">
+        <img id="cookiesImage" src="images/cookies.png" class="unselected" alt="תמונה של אוריאו">
+    </div>
+
+    <script src="jScripts\orderScript.js"></script>
+</body>
+</html>

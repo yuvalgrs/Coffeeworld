@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>עולם הקפה- צור קשר</title>
+    <meta name="description" content="אתר קפה עם מתכונים ומידע על סוגי קפה - יצירת קשר.">
+    <meta name="keywords" content="קפה, מתכונים, קפה ישראלי">
+    <meta name="author" content="יובל גרוסמן, שני סהר, טבע צורן, גל חברוני, טל יצחקי">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+
+    <link href="styles/contactStyle.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <header>
+        <h1>עולם הקפה- צור קשר</h1>
+        <nav aria-label="contact-nav">
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="about.html">עלינו</a></li>
+                <li><a href="order.html">הזמנת קפה</a></li>
+                <li><a href="names.html">מילון הקפה</a></li>
+                <li><a href="history.html">היסטוריה</a></li>
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="siteMap.html">מפת אתר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="contactUs.html">צור קשר</a></li>
+            </ol>
+        </nav>
+        <section>
+            <form id="contactForm" action="your_form_submission_url" method="post">
+                <h2>צור קשר</h2>
+
+                <label for="name">שם מלא:</label>
+                <input type="text" id="name" name="name" required placeholder="הזן את שמך המלא">
+
+                <label for="email">אימייל:</label>
+                <input type="email" id="email" name="email" required placeholder="הזן את האימייל שלך" oninvalid="this.setCustomValidity('נא להזין אימייל תקין')" oninput="this.setCustomValidity('')">
+
+                <label for="phone">טלפון:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="הזן את מספר הטלפון שלך" pattern="[0-9]{10}" oninvalid="this.setCustomValidity('נא להזין טלפון תקין (10 ספרות)')" oninput="this.setCustomValidity('')">
+
+                <label for="message">הודעה:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="כתוב את הודעתך כאן"></textarea>
+
+                <button type="submit">שלח</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 עולם הקפה. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>
